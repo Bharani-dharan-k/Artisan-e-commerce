@@ -1,0 +1,84 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  scroll-behavior: smooth;
+}
+
+/* Apply global styles only to main content pages */
+.global-container {
+  width: 100%;
+  background-color: #f4f4f4;
+  color: #333;
+  max-width: 100vw; /* Ensures nothing exceeds the viewport */
+}
+
+/* Content Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  overflow-x: hidden; /* Ensures no internal scrolling */
+}
+
+/* Button Styling (Avoiding Interference) */
+.global-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.global-btn:hover {
+  background: #ff5733;
+}
+
+/* Header Styles */
+header.global-header {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Footer */
+footer.global-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation only where necessary */
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}

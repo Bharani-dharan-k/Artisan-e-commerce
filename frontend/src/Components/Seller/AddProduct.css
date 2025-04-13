@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Full Page Form Container */
+  .add-product-container {
+    width: 100%;
+    min-height: 100vh; /* Make it take full height */
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Form Title */
+  .add-product-container h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Fields */
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  form input:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  /* File Input Styling */
+  .file-input-wrapper {
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .file-input-wrapper input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #4a90e2;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .file-label:hover {
+    background: #357bd8;
+  }
+  
+  /* Submit Button */
+  form button {
+    width: 100%;
+    background: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  form button:hover {
+    background: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .add-product-container h2 {
+      font-size: 22px;
+    }
+  }
+  

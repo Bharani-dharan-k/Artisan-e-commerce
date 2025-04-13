@@ -1,0 +1,296 @@
+/* General Styles */
+.home-container {
+  text-align: center;
+  background: linear-gradient(180deg, #fff3e6, #ffedd5);
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('/public/images/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-section p {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  z-index: 1;
+  position: relative;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-section .btn {
+  display: inline-block;
+  background: #ff7e5f;
+  color: white;
+  padding: 14px 24px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-section .btn:hover {
+  background: #ffddc1;
+  color: #8B4513;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature {
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  color: #8B4513;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ff7e5f;
+  margin: 8px auto;
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.product {
+  width: 280px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+}
+
+.product h3 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.product p {
+  font-size: 1.1rem;
+  color: #8B4513;
+  font-weight: bold;
+}
+
+.product button {
+  background: #8B4513;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.product button:hover {
+  background: #FFD700;
+  color: #8B4513;
+  transform: scale(1.05);
+}
+
+/* Customer Reviews */
+.reviews {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #fff3e6, #ffedd5);
+}
+
+.review {
+  background: white;
+  padding: 30px;
+  width: 70%;
+  min-height: 80px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.review:hover {
+  transform: translateY(-6px);
+}
+
+.review p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Blog Section */
+.blog {
+  padding: 60px 20px;
+}
+
+.blog-post {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.blog-post:hover {
+  transform: translateY(-6px);
+}
+
+.blog-post h3 {
+  font-size: 1.6rem;
+}
+
+.blog-post p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .hero-section .btn {
+    font-size: 1.1rem;
+    padding: 10px 18px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews {
+    background: linear-gradient(180deg, #fff3e6, #ffedd5);
+  }
+
+  .review {
+    width: 90%;
+    text-align: center;
+  }
+
+  .blog-post {
+    width: 90%;
+  }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
